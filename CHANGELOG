@@ -1,0 +1,11 @@
+# ChangeLog
+
+## [0.0.3] 2017-07-11
+- Added the change log to the git repo
+
+## [0.0.2] 2017-07-11
+- Correct the github links in package.json
+
+## [0.0.1] 2017-07-11
+- The initial version for the hubot-icinga2
+

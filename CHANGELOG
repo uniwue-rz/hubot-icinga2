@@ -1,5 +1,8 @@
 # ChangeLog
 
+## [0.0.4] 2017-07-11
+- Small error in notification.sh, no it is solved
+
 ## [0.0.3] 2017-07-11
 - Added the change log to the git repo
 

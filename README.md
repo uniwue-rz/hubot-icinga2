@@ -37,12 +37,12 @@ On hubot server you should set the `HUBOT_ICINGA2_TOKEN` environment variable so
 Make sure your firewall is not blocking the queries. The hubot will be listening on `/hubot/icinga2/:room` address and it is waiting for the notifications.  
 
 ### Icinga2
-On Incinga2 server to make the configuration easier, you should have the `icinga2 director` installed. Then you must create a notification command using the notification.sh file. The command can look like this:
+On Incinga2 server to make the configuration easier, you should have the `icinga2 director` installed. Then you must create a notification command using the `notification.sh` file. You can change `notification.sh` to suite your settings. You need `curl` also installed on the icinga2 server. The command can look like this:
 
 ```conf
 object NotificationCommand "notify-hubot" {
     import "plugin-notification-command"
-    command = [ "/etc/icinga2/scripts/service-by-curl.sh" ]
+    command = [ "/etc/icinga2/scripts/notification.sh" ]
     arguments += {
         "-a" = {
             required = true

@@ -87,5 +87,5 @@ Get live status:
 fi
 
 URL="$HUBOTHOST/hubot/icinga2/$ROCKETCHATROOM"
-#echo "{'token':'$HUBOTTOKEN', 'message':'$NOTIFICATION_MESSAGE'}" | /usr/bin/curl -vvvv -d @- -X POST $URL  --trace-ascii /dev/stdout  # For debug use this
-echo "{'token':'$HUBOTTOKEN', 'message':'$NOTIFICATION_MESSAGE'}" | /usr/bin/curl -d @- -X POST $URL
+#/usr/bin/curl -F "token=$HUBOTTOKEN" -F "message=$NOTIFICATION_MESSAGE" -vvvv -X POST $URL  --trace-ascii /dev/stdout  # For debug use this
+/usr/bin/curl -F "token=$HUBOTTOKEN" -F "message=$NOTIFICATION_MESSAGE" -X POST $URL

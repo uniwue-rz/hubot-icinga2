@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-icinga2.git"
+    "url": "git://github.com/uniwue-rz/hubot-icinga2.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-icinga2/issues"
+    "url": "https://github.com/uniwue-rz/hubot-icinga2/issues"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -44,7 +44,7 @@
   },
   "readme": "# hubot-icinga2\n\nA hubot script that receives and shows icinga2 notification in the chat-room\n\nSee [`src/hubot-icinga2.coffee`](src/hubot-icinga2.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-icinga2 --save`\n\nThen add **hubot-icinga2** to your `external-scripts.json`:\n\n```json\n[\n  \"hubot-icinga2\"\n]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot hello\nhubot>> hello!\n```\n\n## NPM Module\n\nhttps://www.npmjs.com/package/hubot-icinga2\n",
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/hubot-scripts/hubot-icinga2#readme",
+  "homepage": "https://github.com/uniwue-rz/hubot-icinga2#readme",
   "_id": "hubot-icinga2@0.0.0",
   "_shasum": "4f1263b794c14b605f8371c2613a0dbe3cdd73ae",
   "_from": "hubot-icinga2",

@@ -1,0 +1,52 @@
+{
+  "name": "hubot-icinga2",
+  "description": "A hubot script that receives and shows icinga2 notification in the chat-room",
+  "version": "0.0.2",
+  "author": {
+    "name": "Pouyan Azari",
+    "email": "pouyan.azari@uni-wuerzburg.de"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "icinga2"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-icinga2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-icinga2/issues"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "devDependencies": {
+    "hubot-test-helper": "^1.3.0",
+    "chai": "^2.1.1",
+    "coffee-script": "1.6.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-release": "~0.11.0",
+    "hubot": "2.x",
+    "matchdep": "~0.3.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "readme": "# hubot-icinga2\n\nA hubot script that receives and shows icinga2 notification in the chat-room\n\nSee [`src/hubot-icinga2.coffee`](src/hubot-icinga2.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-icinga2 --save`\n\nThen add **hubot-icinga2** to your `external-scripts.json`:\n\n```json\n[\n  \"hubot-icinga2\"\n]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot hello\nhubot>> hello!\n```\n\n## NPM Module\n\nhttps://www.npmjs.com/package/hubot-icinga2\n",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/hubot-scripts/hubot-icinga2#readme",
+  "_id": "hubot-icinga2@0.0.0",
+  "_shasum": "4f1263b794c14b605f8371c2613a0dbe3cdd73ae",
+  "_from": "hubot-icinga2",
+  "_resolved": "file:hubot-icinga2"
+}

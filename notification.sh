@@ -30,7 +30,7 @@ EOF
 exit 1;
 }
 
-while getopts a:b:c:d:e:hi:l:o:x:r:s:t:x:z opt
+while getopts a:b:c:d:e:hi:l:o:r:s:t:x:z: opt
 do
   case "$opt" in
     a) HOSTADDRESS=$OPTARG ;;
@@ -42,10 +42,10 @@ do
     i) HAS_ICINGAWEB2=$OPTARG ;;
     l) HOSTALIAS=$OPTARG ;;
     o) SERVICEOUTPUT=$OPTARG ;;
-    x) HUBOTHOST=$OPTARG ;;
     r) ROCKETCHATROOM=$OPTARG ;;
     s) SERVICESTATE=$OPTARG ;;
     t) NOTIFICATIONTYPE=$OPTARG ;;
+    x) HUBOTHOST=$OPTARG ;;
     z) HUBOTTOKEN=$OPTARG ;;
    \?) echo "ERROR: Invalid option -$OPTARG" >&2
        Usage ;;
@@ -57,7 +57,6 @@ do
 done
 
 shift $((OPTIND - 1))
-
 NOTIFICATION_MESSAGE=`cat << EOF
 ***** Icinga 2 Service Monitoring on $HOSTNAME *****
 
@@ -85,7 +84,7 @@ if [ -n "$HAS_ICINGAWEB2" ] ; then
 Get live status:
   $HAS_ICINGAWEB2/monitoring/service/show?host=$HOSTALIAS&service=$SERVICENAME"
 fi
+URL="$HUBOTHOST/hubot/icinga2/$ROCKETCHATROOM
 
-URL="$HUBOTHOST/hubot/icinga2/$ROCKETCHATROOM"
 #/usr/bin/curl -F "token=$HUBOTTOKEN" -F "message=$NOTIFICATION_MESSAGE" -vvvv -X POST $URL  --trace-ascii /dev/stdout  # For debug use this
 /usr/bin/curl -F "token=$HUBOTTOKEN" -F "message=$NOTIFICATION_MESSAGE" -X POST $URL

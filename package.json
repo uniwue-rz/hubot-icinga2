@@ -1,7 +1,7 @@
 {
   "name": "hubot-icinga2",
   "description": "A hubot script that receives and shows icinga2 notification in the chat-room",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Pouyan Azari",
     "email": "pouyan.azari@uni-wuerzburg.de"

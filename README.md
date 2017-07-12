@@ -109,7 +109,7 @@ apply Notification "Status Alarm to Hubot" to Service {
     assign where match("*", service.name)
     types = [ Problem, Recovery ]
     users = [ "admin" ]
-    vars.hubot_host = "http://yourhost:8090/hubot/icinga2/"
+    vars.hubot_host = "http://yourhost:8090"
     vars.hubot_token = "token"
     vars.rocketchat_room = "general"
 }

@@ -34,7 +34,7 @@ module.exports = (robot) ->
     try
        if token_set == token
         robot.send user, notification_pre  + message
-        response.end "{'status':'success', 'message':'your message is successfully propated'}"
+        response.end "{'status':'success', 'message':'your message is successfully propagated'}"
        else
         response.end "{'status':'error', 'message':'the given token is wrong'}"
 

@@ -1,7 +1,10 @@
 # ChangeLog
 
+### [0.0.7] 2017-07-12
+- small typo in hubot-icinga2.coffee
+
 ### [0.0.6] 2017-07-12
-- small error in README, the notifcation.sh contains the /hubot/icinga2/:room, so hubot_host should only be the absolute host address
+- small error in README, the notification.sh contains the /hubot/icinga2/:room, so hubot_host should only be the absolute host address
 
 ## [0.0.5] 2017-07-11
 - working and tested notification.sh
